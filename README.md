@@ -168,3 +168,5 @@ Bachelor’s degree holders consistently earn more than high school graduates ov
 This graph shows the ratio of bachelor’s earnings to high school earnings, representing the “college advantage.”
 
 # Trends
+
+Overall, while the cost of college has risen sharply, the wage premium has remained relatively stable, raising questions about whether the financial return justifies the increasing cost.
