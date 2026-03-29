@@ -148,7 +148,7 @@ This graph shows how average college tuition has increased steadily over time.
 ## 2. Financial Aid vs Loans
 ![Aid vs Loans](Images/aid_loan.png)
 
-While financial aid has increased, student loans have also fallen significantly, indicating falling reliance on borrowing.
+While financial aid has increased, student loans decreased, indicating falling reliance on borrowing.
 
 ---
 
@@ -164,6 +164,15 @@ Bachelor’s degree holders consistently earn more than high school graduates ov
 
 This graph shows the ratio of bachelor’s earnings to high school earnings, representing the “college advantage.”
 
-# Trends
+## 5. College Wage Premium ROI Over Time
+<img width="1000" height="500" alt="Big" src="https://github.com/user-attachments/assets/f1d39b45-af48-4b35-a7f4-1beedd9db0e9" />
 
-Overall, while the cost of college has risen sharply, the wage premium has remained relatively stable, raising questions about whether the financial return justifies the increasing cost.
+This graph shows that over the years, as tuition went up over the years, the annual wage premium remained stagnant showing a decrease of return on investment in a Bachelor's degree.
+
+## 6. College Costs vs Wage Premium Since 2000 
+<img width="1000" height="500" alt="Alltogether" src="https://github.com/user-attachments/assets/ea96cab9-febf-43b8-9458-17ba8de9eab2" />
+
+This is a visualization of all datasets (tuition costs, wage premium, student loans, and fiancial aid). Tuition cosr increased but financial aid kept up. As a result of increasing aid, student loans decreased; however, the wage premium remained stagnant over the years.
+
+# Trends
+While tuition rose 82% since 2000, financial aid kept pace and student borrowing declined. However, the wage premium — the salary advantage of a bachelor's degree over a high school diploma — remained essentially flat, suggesting the financial return on a college degree has weakened relative to its cost.
