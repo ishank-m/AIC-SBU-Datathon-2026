@@ -2,10 +2,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the cleaned data
-tuition_df = pd.read_csv("tuition_clean.csv")
-aid_loan_df = pd.read_csv("aid_and_loans_clean.csv")
-hs_earnings_df = pd.read_csv("hs_earnings_clean.csv")
-ba_earnings_df = pd.read_csv("ba_earnings_clean.csv")
+tuition_df = pd.read_csv("CleanedUpData/tuition_clean.csv")
+aid_loan_df = pd.read_csv("CleanedUpData/aid_and_loans_clean.csv")
+hs_earnings_df = pd.read_csv("CleanedUpData/hs_earnings_clean.csv")
+ba_earnings_df = pd.read_csv("CleanedUpData/ba_earnings_clean.csv")
 
 
 
