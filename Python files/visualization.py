@@ -76,7 +76,7 @@ plt.grid()
 plt.show()
 
 # Plot ROI ratio (wage premium / tuition)
-df["roi_ratio"] = df["wage_premium"] / df["tuition"]
+df["roi_ratio"] = (df["wage_premium"]*52) / df["tuition"]
 
 plt.figure(figsize=(10, 5))
 plt.plot(df["year"], df["roi_ratio"], marker='o')
