@@ -38,7 +38,7 @@ plt.xlabel("Year")
 plt.ylabel("Average Earnings (USD)")
 plt.legend()
 plt.grid()
-plt.show()         
+plt.show()
 
 
 # Plotting the wage premium ration
