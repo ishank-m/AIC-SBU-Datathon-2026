@@ -3,21 +3,64 @@
 ## Question/Proposal: The Cost of College Has Risen. Has Financial Return Kept Up?
 
 # Setup
-Since we're working on python 3.14 for this, we'd need the pandas, openpyxl, matplotlib, and the urllib. 
-make sure you install pandas, matplotlib, and openpyxl using 
+This project uses Python 3.14 along with the following libraries:
+- pandas  
+- matplotlib  
+- openpyxl  
+- urllib (built-in)
 
-```bash
+Install the required external libraries using:
+
+```python
 pip install pandas matplotlib openpyxl
 ```
-We created 3 separate python files for a smoother workflow, a setup.py file that fetches all the required dataset from web using python's built-in urllib library, a cleanup.py that cleans up the fetched dataset using pandas and openpyxl libraries, and a visualization.py that uses the cleaned-up data and graphs it using matplotlib with pandas libraries. 
 
-Import the urllib as such to get started with pulling the dataset from web:
+Project Structure
+We use three separate Python files for a clean workflow:
+setup.py → Fetches datasets from the web
+cleanup.py → Cleans and processes the data
+visualization.py → Creates graphs and analysis
 
-```bash
+
+We use Python’s built-in urllib library to download datasets directly from online sources.
+Import urllib as follows:
+
+```python
 import urllib.request as urllib;
 ```
 
-Rest of the code is in setup.py file which basically just fetches all the required datasets from the web.
+Then use the following script to download all required datasets:
+
+```python
+# Bachelor's earnings data
+urllib.urlretrieve(
+    "https://fred.stlouisfed.org/graph/fredgraph.csv?id=LEU0252918500Q",
+    "ba_earnings.csv"
+)
+
+# High school earnings data
+urllib.urlretrieve(
+    "https://fred.stlouisfed.org/graph/fredgraph.csv?id=LEU0252917300Q",
+    "hs_earnings.csv"
+)
+
+# Tuition data
+urllib.urlretrieve(
+    "https://research.collegeboard.org/media/xlsx/Trends-in-Student-Aid-2025-excel-data_0.xlsx",
+    "tuitions.xlsx"
+)
+
+# Aid and loan data
+urllib.urlretrieve(
+    "https://research.collegeboard.org/media/xlsx/Trends-in_College-Pricing-2025-excel-data.xlsx",
+    "loans_and_grants.xlsx"
+)
+```
+
+This script: 
+- Downloads datasets directly from FRED (Federal Reserve Economic Data) and College Board
+- Saves them locally as .csv and .xlsx files
+- Prepares raw data for the cleanup stage
 
 # Data Clean-up
 We use pandas and openpyxl libraries for cleaning up data. openpyxl is a library that helps manipulate Excel files (.xlsx).
@@ -88,7 +131,7 @@ tuition_annual.to_csv("tuition_clean.csv", index=False)
 aid_annual.to_csv("aid_and_loans_clean.csv", index=False)
 ```
 
-What this script does:
+This script:
 - Extracts relevant rows and columns from raw datasets
 - Cleans and formats numeric values
 - Converts date fields into proper datetime format
