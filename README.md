@@ -6,13 +6,12 @@
 This project uses Python 3.14 along with the following libraries:
 - pandas  
 - matplotlib  
-- openpyxl  
 - urllib (built-in)
 
 Install the required external libraries using:
 
 ```python
-pip install pandas matplotlib openpyxl
+pip install pandas matplotlib
 ```
 
 Project Structure
@@ -63,26 +62,24 @@ This script:
 - Prepares raw data for the cleanup stage
 
 # Data Clean-up
-We use pandas and openpyxl libraries for cleaning up data. openpyxl is a library that helps manipulate Excel files (.xlsx).
+We use pandas library for cleaning up data.
 
 Before you begin, make sure to import the libraries:
 
 ```python
 import pandas as pd
-import openpyxl as openpyxl
 ```
 
 Ensure these libraries are installed using:
 
 ```python
-pip install pandas matplotlib openpyxl
+pip install pandas matplotlib
 ```
 
 The following script processes raw datasets, extracts relevant columns, converts dates, and aggregates yearly data:
 
 ```python
 import pandas as pd
-import openpyxl as openpyxl
 
 # Tuition Data
 file_path = "tuitons.xlsx"
